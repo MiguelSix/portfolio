@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@miguelSix</title>
+    <meta name="description" content="Miguel Olvera's personal portfolio website" />
+    <link rel="icon" href="img/icons8-doge-16.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Miguel Olvera</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">about</a></li>
+                <li><a href="#tech_stack">tech stack</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Miguel Olvera</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#tech_stack" onclick="toggleMenu()">Tech Stack</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="img/pfp.jpg" alt="Miguel Olvera profile picture" class="pfp" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <div class="box_typing">
+                <h1>Miguel Angel.</h1>
+            </div>
+            <p class="section__text__p2">Estudiante de Ingeniería en <br />
+                Sistemas Computacionales</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./CV_20240224_095729_0000.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="img/icons8-linkedin-250.png" alt="My LinkedIn profile" class="icon"
+                    onclick="location.href='https://linkedin.com/'" />
+                <img src="img/icons8-github-256.png" alt="My Github profile" class="icon"
+                    onclick="location.href='https://github.com/MiguelSix'" />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="img/about-pic.jpg" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="img/icons8-literature.gif" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>Técnico en Programación. CBTis 118<br />Ingeniería en Sistemas Computacionales. ITQ</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I am a student of the Tecnológico Nacional de México campus Querétaro in computer systems
+                        engineering, self-taught and passionate about technology and computing. I have just started my
+                        professional journey, looking for opportunities for work and personal growth.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="img/icons8-double-down.gif" alt="Arrow icon" class="icon arrow"
+            onclick="location.href='./#tech_stack'" />
+    </section>
+    <section id="tech_stack">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="stack-container">
+                <div class="details-container">
+                    <div class="article-container">
+                        <article>
+                            <img src="img/icons8-arduino-500.png" alt="arduino icon" class="icon" />
+                            <h3>Arduino</h3>
+                        </article>
+                        <article>
+                            <img src="img/icons8-bootstrap-500.png" alt="bootstrap icon" class="icon" />
+                            <h3>Bootstrap</h3>
+                        </article>
+                    </div>
+                    <br>
+                    <div class="article-container">
+                        <article>
+                            <img src="img/icons8-java.gif" alt="java icon" class="icon" />
+                            <h3>Java</h3>
+                        </article>
+                        <article>
+                            <img src="img/icons8-html5-500.png" alt="html icon" class="icon" />
+                            <h3>HTML</h3>
+                        </article>
+                        <article>
+                            <img src="img/icons8-c-500.png" alt="c++ icon" class="icon" />
+                            <h3>C++</h3>
+                        </article>
+                        <article>
+                            <img src="img/icons8-git-500.png" alt="git icon" class="icon" />
+                            <h3>Git</h3>
+                        </article>
+                    </div>
+                    <br>
+                    <div class="article-container">
+                        <article>
+                            <img src="img/icons8-css3-500.png" alt="css icon" class="icon" />
+                            <h3>CSS</h3>
+                        </article>
+                        <article>
+                            <img src="img/icons8-device-manager-100.png" alt="manteinance icon" class="icon" />
+                            <h3>Computer Maintenance</h3>
+                        </article>
+                        <article>
+                            <img src="img/icons8-python.gif" alt="python icon" class="icon" />
+                            <h3>Python</h3>
+                        </article>
+                        <article>
+                            <img src="img/icons8-c-500 (1).png" alt="c# icon" class="icon" />
+                            <h3>C#</h3>
+                        </article>
+                        <article>
+                            <img src="img/icons8-network.gif" alt="network icon" class="icon" />
+                            <h3>Networks</h3>
+                        </article>
+                    </div>
+                    <br>
+                    <div class="article-container">
+                        <article>
+                            <img src="img/icons8-mysql-500.png" alt="mysql icon" class="icon" />
+                            <h3>MySQL</h3>
+                        </article>
+                        <article>
+                            <img src="img/icons8-windows-500.png" alt="windows icon" class="icon" />
+                            <h3>Windows</h3>
+                        </article>
+                        <article>
+                            <img src="img/icons8-linux-100.png" alt="linux icon" class="icon" />
+                            <h3>Linux</h3>
+                        </article>
+                        <article>
+                            <img src="img/icons8-oracle-500.png" alt="oracle icon" class="icon" />
+                            <h3>Oracle Database</h3>
+                        </article>
+                    </div>
+                    <br>
+                    <div class="article-container">
+                        <article>
+                            <img src="img/icons8-amazon-web-services-480.png" alt="aws icon" class="icon" />
+                            <h3>AWS</h3>
+                        </article>
+                        <article>
+                            <img src="img/icons8-c-100.png" alt="c icon" class="icon" />
+                            <h3>C</h3>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <img src="img/icons8-double-down.gif" alt="Arrow icon" class="icon arrow"
+            onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="img/icons8-mail.gif" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:olveramoralesmiguelangel44@gmail.com">olveramoralesmiguelangel44@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="img/icons8-linkedin-250.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#tech_stack">tech stack</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
